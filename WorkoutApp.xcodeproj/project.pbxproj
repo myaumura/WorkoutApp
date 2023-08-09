@@ -12,6 +12,9 @@
 		970612D82A6873D10053832B /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970612D72A6873D10053832B /* OverviewController.swift */; };
 		970612DD2A6873D20053832B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970612DC2A6873D20053832B /* Assets.xcassets */; };
 		970612E02A6873D20053832B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970612DE2A6873D20053832B /* LaunchScreen.storyboard */; };
+		9716D23D2A83F4F5006104D4 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716D23C2A83F4F5006104D4 /* WeekView.swift */; };
+		9716D23F2A83FDBC006104D4 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716D23E2A83FDBC006104D4 /* WeekdayView.swift */; };
+		9716D2412A841485006104D4 /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716D2402A841485006104D4 /* Date + ext.swift */; };
 		9770C6642A6BD69600A9CA0B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9770C6632A6BD69600A9CA0B /* TabBarController.swift */; };
 		9770C6672A6BD79200A9CA0B /* UIColor + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9770C6662A6BD79200A9CA0B /* UIColor + ext.swift */; };
 		9770C66C2A6BD8C300A9CA0B /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9770C66B2A6BD8C300A9CA0B /* Resources.swift */; };
@@ -34,6 +37,9 @@
 		970612DC2A6873D20053832B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		970612DF2A6873D20053832B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		970612E12A6873D20053832B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9716D23C2A83F4F5006104D4 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		9716D23E2A83FDBC006104D4 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
+		9716D2402A841485006104D4 /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
 		9770C6632A6BD69600A9CA0B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9770C6662A6BD79200A9CA0B /* UIColor + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + ext.swift"; sourceTree = "<group>"; };
 		9770C66B2A6BD8C300A9CA0B /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
@@ -105,6 +111,15 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		9716D23B2A83F4E2006104D4 /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				9716D23C2A83F4F5006104D4 /* WeekView.swift */,
+				9716D23E2A83FDBC006104D4 /* WeekdayView.swift */,
+			);
+			path = WeekView;
+			sourceTree = "<group>";
+		};
 		9770C6652A6BD78100A9CA0B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +134,7 @@
 			children = (
 				9770C6662A6BD79200A9CA0B /* UIColor + ext.swift */,
 				9770C6722A71715900A9CA0B /* UIView + ext.swift */,
+				9716D2402A841485006104D4 /* Date + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -182,6 +198,7 @@
 		9770C67F2A76FB4200A9CA0B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9716D23B2A83F4E2006104D4 /* WeekView */,
 				9770C6802A76FB5E00A9CA0B /* SecondaryButton.swift */,
 				9793B88C2A8143B4001CDEB5 /* OverviewNavBar.swift */,
 			);
@@ -258,6 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9716D23D2A83F4F5006104D4 /* WeekView.swift in Sources */,
+				9716D2412A841485006104D4 /* Date + ext.swift in Sources */,
 				9770C67E2A71747200A9CA0B /* SettingsController.swift in Sources */,
 				970612D82A6873D10053832B /* OverviewController.swift in Sources */,
 				9793B88D2A8143B4001CDEB5 /* OverviewNavBar.swift in Sources */,
@@ -271,6 +290,7 @@
 				9770C66C2A6BD8C300A9CA0B /* Resources.swift in Sources */,
 				9770C6672A6BD79200A9CA0B /* UIColor + ext.swift in Sources */,
 				9793B88F2A814421001CDEB5 /* BaseView.swift in Sources */,
+				9716D23F2A83FDBC006104D4 /* WeekdayView.swift in Sources */,
 				9770C6712A7129AA00A9CA0B /* BaseController.swift in Sources */,
 				970612D62A6873D10053832B /* SceneDelegate.swift in Sources */,
 			);

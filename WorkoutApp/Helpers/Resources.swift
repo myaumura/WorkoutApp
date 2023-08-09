@@ -29,6 +29,14 @@ enum Resources {
             static var settings = "Settings"
         }
         
+        enum NavBar {
+            static var overview = "Today"
+            static var session = "High Intensity Cardio"
+            static var progress = "Workout Progress"
+            static var settings = "Settings"
+        }
+        
+        
         enum Overview {
             static var allWorkoutsButton = "AllWorkouts"
         }

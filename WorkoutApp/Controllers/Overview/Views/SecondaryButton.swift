@@ -34,8 +34,8 @@ private extension SecondaryButton {
     
     func addViews() {
         
-        addView(label)
-        addView(iconView)
+        setupView(label)
+        setupView(iconView)
         
     }
     
@@ -56,15 +56,15 @@ private extension SecondaryButton {
     
     func configure() {
         makeSystem(self)
-        backgroundColor = Resources.Colors.secondary
+        backgroundColor = R.Colors.secondary
         layer.cornerRadius = 14
         
-        label.textColor = Resources.Colors.active
+        label.textColor = R.Colors.active
         label.textAlignment = .center
-        label.font = Resources.Fonts.helveticaRegular(with: 15)
+        label.font = R.Fonts.helveticaRegular(with: 15)
         
-        iconView.image = Resources.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
-        iconView.tintColor = Resources.Colors.active
+        iconView.image = R.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
+        iconView.tintColor = R.Colors.active
         
         
     }

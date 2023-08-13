@@ -10,7 +10,6 @@ import UIKit
 extension UIView {
     
     func addBottomBorder (with color: UIColor, height: CGFloat) {
-        
         let separator = UIView()
         separator.backgroundColor = color
         separator.autoresizingMask = [.flexibleHeight, .flexibleWidth]
@@ -18,12 +17,10 @@ extension UIView {
                                  y: frame.height - height,
                                  width: frame.width,
                                  height: height)
-        
         addSubview(separator)
     }
     
     func makeSystem(_ button: UIButton) {
-        
         button.addTarget(self, action: #selector(handleIn), for: [
             .touchDown,
             .touchDragInside
@@ -35,7 +32,6 @@ extension UIView {
             .touchDragExit,
             .touchCancel
         ])
-        
     }
     
     @objc func handleIn() {
@@ -47,10 +43,8 @@ extension UIView {
     }
     
     func setupView(_ view: UIView){
-        
         addSubview(view)
         view.translatesAutoresizingMaskIntoConstraints = false
-        
     }
     
 }

@@ -28,6 +28,8 @@
 		9770C6812A76FB5E00A9CA0B /* WAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9770C6802A76FB5E00A9CA0B /* WAButton.swift */; };
 		9793B88D2A8143B4001CDEB5 /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9793B88C2A8143B4001CDEB5 /* OverviewNavBar.swift */; };
 		9793B88F2A814421001CDEB5 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9793B88E2A814421001CDEB5 /* BaseView.swift */; };
+		97C9A38C2A8A9333000E6EB0 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C9A38B2A8A9333000E6EB0 /* TimerView.swift */; };
+		97C9A38E2A8A93BD000E6EB0 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C9A38D2A8A93BD000E6EB0 /* ProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		9770C6802A76FB5E00A9CA0B /* WAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAButton.swift; sourceTree = "<group>"; };
 		9793B88C2A8143B4001CDEB5 /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
 		9793B88E2A814421001CDEB5 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		97C9A38B2A8A9333000E6EB0 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		97C9A38D2A8A93BD000E6EB0 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,7 @@
 		9770C6762A71741300A9CA0B /* Session */ = {
 			isa = PBXGroup;
 			children = (
+				97C9A38A2A8A930E000E6EB0 /* Timer */,
 				9770C6792A71745E00A9CA0B /* SessionController.swift */,
 			);
 			path = Session;
@@ -206,6 +211,15 @@
 				9793B88C2A8143B4001CDEB5 /* OverviewNavBar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		97C9A38A2A8A930E000E6EB0 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				97C9A38B2A8A9333000E6EB0 /* TimerView.swift */,
+				97C9A38D2A8A93BD000E6EB0 /* ProgressView.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +302,8 @@
 				970612D42A6873D10053832B /* AppDelegate.swift in Sources */,
 				9770C67A2A71745E00A9CA0B /* SessionController.swift in Sources */,
 				9716D2432A851293006104D4 /* WABaseInfoView.swift in Sources */,
+				97C9A38C2A8A9333000E6EB0 /* TimerView.swift in Sources */,
+				97C9A38E2A8A93BD000E6EB0 /* ProgressView.swift in Sources */,
 				9770C6812A76FB5E00A9CA0B /* WAButton.swift in Sources */,
 				9770C67C2A71746900A9CA0B /* ProgressController.swift in Sources */,
 				9770C66E2A6EE0FB00A9CA0B /* NavBarController.swift in Sources */,

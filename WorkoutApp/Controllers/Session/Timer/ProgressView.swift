@@ -64,10 +64,57 @@ extension TimerView{
             dotLayer.lineCap = .round
             dotLayer.lineWidth = 8
             
+            let barsFrame = UIScreen.main.bounds.width - (40 + 15 + 25) * 2
+            let barsRadius = barsFrame/2
+            let barsPath = UIBezierPath(arcCenter: center,
+                                       radius: barsRadius,
+                                       startAngle: startAngle,
+                                       endAngle: endAngle,
+                                       clockwise: true)
+            
+            let barsLayer = CAShapeLayer()
+            barsLayer.path = barsPath.cgPath
+            barsLayer.fillColor = UIColor.clear.cgColor
+            barsLayer.strokeColor = UIColor.clear.cgColor
+            barsLayer.lineWidth = 6
+            
+            let startBarsRadius = barsRadius - barsLayer.lineWidth * 0.5
+            let endBarsRadius = startBarsRadius + 6
+            
+            var angle:CGFloat = 7 / 6
+            (1...9).forEach { _ in
+                
+                let barAngle = CGFloat.pi * angle
+                let startBarPoint = CGPoint(
+                    x: cos(-barAngle) * startBarsRadius + center.x,
+                    y: sin(-barAngle) * startBarsRadius + center.y)
+                
+                let endBarPoint = CGPoint(
+                    x: cos(-barAngle) * endBarsRadius + center.x,
+                    y: sin(-barAngle) * endBarsRadius + center.y)
+                
+                let barPath = UIBezierPath()
+                barPath.move(to: startBarPoint)
+                barPath.addLine(to: endBarPoint)
+                
+                let barLayer = CAShapeLayer()
+                barLayer.path = barPath.cgPath
+                barLayer.fillColor = UIColor.clear.cgColor
+                barLayer.strokeColor = angle >= (7 / 6 - (8 / 6 * percent)) ? R.Colors.active.cgColor : R.Colors.separator.cgColor
+                barLayer.lineCap = .round
+                barLayer.lineWidth = 4
+                
+                barsLayer.addSublayer(barLayer)
+                
+                angle -= 1 / 6
+            }
+      
+            
             layer.addSublayer(defaultCircleLayer)
             layer.addSublayer(circleLayer)
             layer.addSublayer(bigDotLayer)
             layer.addSublayer(dotLayer)
+            layer.addSublayer(barsLayer)
         }
     }
 }

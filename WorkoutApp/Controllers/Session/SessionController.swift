@@ -9,12 +9,9 @@ import UIKit
 
 class SessionController: BaseController {
 
-    private let timerView: TimerView = {
-        let view = TimerView()
-        
-        return view
-    }()
+    private let timerView = TimerView()
     
+    private var timerDuration = 3.0
 }
 
 extension SessionController {
@@ -50,5 +47,7 @@ extension SessionController {
         
         addNavBarButtons(with: .left, title: "Pause")
         addNavBarButtons(with: .right, title: "Finish")
+        
+        timerView.configure(with: timerDuration, progress: 1.5)
     }
 }

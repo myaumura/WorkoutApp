@@ -45,6 +45,22 @@ enum R {
         enum Overview {
             static var allWorkoutsButton = "AllWorkouts"
         }
+        
+        enum Session {
+            static var navBarStart = "Start   "
+            static var navBarPause = "Pause"
+            static var navBarFinish = "Finish"
+            
+            static var elapsedTime = "Elapsed Time"
+            static var remainingTime = "Remaining Time"
+            
+        }
+        
+        enum Progress {
+            
+            static var navBarLeft = "Export"
+            static var navBarRight = "Details"
+        }
     }
     
 

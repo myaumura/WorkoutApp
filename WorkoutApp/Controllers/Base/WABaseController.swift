@@ -1,5 +1,5 @@
 //
-//  BaseController.swift
+//  WABaseController.swift
 //  WorkoutApp
 //
 //  Created by Kirill Gusev on 26.07.2023.
@@ -13,7 +13,7 @@ enum NavBarPosition{
     case right
 }
 
-class BaseController : UIViewController {
+class WABaseController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +25,8 @@ class BaseController : UIViewController {
 
 }
 
-@objc extension BaseController{
-    
+@objc extension WABaseController{
+
     func setupViews() {}
     func constraintViews() {}
     func configureAppearance() {
@@ -43,16 +43,14 @@ class BaseController : UIViewController {
     
 }
 
-extension BaseController {
+extension WABaseController {
     func addNavBarButtons(with position: NavBarPosition, title: String) {
-        
         
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
         button.setTitleColor(R.Colors.active, for: .normal)
         button.setTitleColor(R.Colors.inactive, for: .disabled)
         button.titleLabel?.font = R.Fonts.helveticaRegular(with: 17)
-        
         
         switch position {
         case .left:
@@ -63,4 +61,16 @@ extension BaseController {
             navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
         }
     }
+    
+    func setTitleForNavBarButton(_ title: String, at position: NavBarPosition) {
+        
+        switch position {
+        case .left:
+            (navigationItem.leftBarButtonItem?.customView as? UIButton)?.setTitle(title, for: .normal)
+        case .right:
+            (navigationItem.rightBarButtonItem?.customView as? UIButton)?.setTitle(title, for: .normal)
+        }
+        
+    }
+    
 }

@@ -1,29 +1,40 @@
 //
-//  WABarsView.swift
+//  XAxisView.swift
 //  WorkoutApp
 //
-//  Created by Kirill Gusev on 26.08.2023.
+//  Created by Kirill Gusev on 27.08.2023.
 //
 
 import UIKit
 
-final class WABarsView: WABaseView {
+final class XAxisView: WABaseView {
     
     private let stackView: UIStackView = {
-       let view = UIStackView()
-        view.distribution = .fillEqually
+        let view = UIStackView()
+        view.axis = .horizontal
+        view.distribution = .equalSpacing
         return view
     }()
     
-    func configure(with data: [WABarView.Data]) {
+    func configure(with data: [WAChartsView.Data]) {
+        stackView.arrangedSubviews.forEach {
+            $0.removeFromSuperview()
+        }
+        
         data.forEach {
-            let barView = WABarView(data: $0)
-            stackView.addArrangedSubview(barView)
+            let label = UILabel()
+            label.font = R.Fonts.helveticaRegular(with: 9)
+            label.textAlignment = .center
+            label.textColor = R.Colors.inactive
+            label.text = $0.title.uppercased()
+            
+            stackView.addArrangedSubview(label)
         }
     }
 }
 
-extension WABarsView {
+
+extension XAxisView {
     
     override func setupViews() {
         super.setupViews()
@@ -49,6 +60,8 @@ extension WABarsView {
     override func configureAppearance() {
         super.configureAppearance()
     
+        backgroundColor = .clear
     }
     
 }
+

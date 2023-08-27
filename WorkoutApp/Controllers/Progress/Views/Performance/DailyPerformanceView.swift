@@ -1,13 +1,13 @@
 //
-//  StepsView.swift
+//  DailyPerformanceView.swift
 //  WorkoutApp
 //
-//  Created by Kirill Gusev on 26.08.2023.
+//  Created by Kirill Gusev on 27.08.2023.
 //
 
 import UIKit
 
-final class StepsView: WABaseInfoView {
+final class DailyPerformanceView: WABaseInfoView {
     
     private let barsView = WABarsView()
     
@@ -18,33 +18,32 @@ final class StepsView: WABaseInfoView {
 
 }
 
-extension StepsView {
+extension DailyPerformanceView {
+    
     
     override func setupViews() {
         super.setupViews()
-        
+
         setupView(barsView)
-                
     }
     
     override func constraintViews() {
         super.constraintViews()
         
+        
         NSLayoutConstraint.activate([
-            
-            
+                
             barsView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15),
             barsView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
             barsView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
             barsView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -15),
-
-            
         ])
         
     }
     
     override func configureAppearance() {
         super.configureAppearance()
-    }
     
+        
+    }
 }

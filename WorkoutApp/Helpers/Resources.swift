@@ -68,7 +68,15 @@ enum R {
             
             static let navBarLeft = "Export"
             static let navBarRight = "Details"
+            
+            static let dailyPerformance = "Daily Performance"
+            static let last7Days = "Last 7 days"
+            
+            static let monthlyPerformance = "Monthly Performance"
+            static let last10Months = "Last 10 months"
         }
+        
+        enum Settings {}
     }
     
 

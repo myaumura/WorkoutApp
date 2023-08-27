@@ -8,15 +8,30 @@
 import UIKit
 
 class SettingsController: WABaseController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        title = R.Strings.NavBar.settings
-        navigationController?.tabBarItem.title = R.Strings.TabBar.title(for: .settings)
-    }
-    
     
     
 }
 
+extension SettingsController {
+    
+    override func setupViews() {
+        super.setupViews()
+
+    }
+    
+    override func constraintViews() {
+        super.constraintViews()
+        
+        NSLayoutConstraint.activate([
+                
+        ])
+        
+    }
+    
+    override func configureAppearance() {
+        super.configureAppearance()
+    
+        title = R.Strings.NavBar.settings
+        navigationController?.tabBarItem.title = R.Strings.TabBar.title(for: .settings)
+    }
+}

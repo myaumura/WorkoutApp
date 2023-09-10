@@ -16,6 +16,8 @@
 		9716D23F2A83FDBC006104D4 /* WeekdayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716D23E2A83FDBC006104D4 /* WeekdayView.swift */; };
 		9716D2412A841485006104D4 /* Date+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716D2402A841485006104D4 /* Date+ext.swift */; };
 		9716D2432A851293006104D4 /* WABaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9716D2422A851293006104D4 /* WABaseInfoView.swift */; };
+		973B19492AA7CBEF003B1FD6 /* TrainingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B19482AA7CBEF003B1FD6 /* TrainingCellView.swift */; };
+		9752CE082AA60B4700957C89 /* SectionHeaderView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 9752CE072AA60B4700957C89 /* SectionHeaderView .swift */; };
 		9770C6642A6BD69600A9CA0B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9770C6632A6BD69600A9CA0B /* TabBarController.swift */; };
 		9770C6672A6BD79200A9CA0B /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9770C6662A6BD79200A9CA0B /* UIColor+Hex.swift */; };
 		9770C66C2A6BD8C300A9CA0B /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9770C66B2A6BD8C300A9CA0B /* Resources.swift */; };
@@ -56,6 +58,8 @@
 		9716D23E2A83FDBC006104D4 /* WeekdayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekdayView.swift; sourceTree = "<group>"; };
 		9716D2402A841485006104D4 /* Date+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ext.swift"; sourceTree = "<group>"; };
 		9716D2422A851293006104D4 /* WABaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABaseInfoView.swift; sourceTree = "<group>"; };
+		973B19482AA7CBEF003B1FD6 /* TrainingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCellView.swift; sourceTree = "<group>"; };
+		9752CE072AA60B4700957C89 /* SectionHeaderView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SectionHeaderView .swift"; sourceTree = "<group>"; };
 		9770C6632A6BD69600A9CA0B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		9770C6662A6BD79200A9CA0B /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		9770C66B2A6BD8C300A9CA0B /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
@@ -150,6 +154,31 @@
 			path = WeekView;
 			sourceTree = "<group>";
 		};
+		9752CE042AA60A9B00957C89 /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				9770C67F2A76FB4200A9CA0B /* Views */,
+			);
+			path = NavBar;
+			sourceTree = "<group>";
+		};
+		9752CE052AA60B2500957C89 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				9752CE062AA60B2D00957C89 /* Views */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		9752CE062AA60B2D00957C89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9752CE072AA60B4700957C89 /* SectionHeaderView .swift */,
+				973B19482AA7CBEF003B1FD6 /* TrainingCellView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9770C6652A6BD78100A9CA0B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,7 +228,8 @@
 		9770C6752A71740B00A9CA0B /* Overview */ = {
 			isa = PBXGroup;
 			children = (
-				9770C67F2A76FB4200A9CA0B /* Views */,
+				9752CE052AA60B2500957C89 /* CollectionView */,
+				9752CE042AA60A9B00957C89 /* NavBar */,
 				970612D72A6873D10053832B /* OverviewController.swift */,
 			);
 			path = Overview;
@@ -414,6 +444,8 @@
 				970612D82A6873D10053832B /* OverviewController.swift in Sources */,
 				9793B88D2A8143B4001CDEB5 /* OverviewNavBar.swift in Sources */,
 				97BBFE352A9BB59B0051A3A2 /* MonthlyPerformanceView.swift in Sources */,
+				973B19492AA7CBEF003B1FD6 /* TrainingCellView.swift in Sources */,
+				9752CE082AA60B4700957C89 /* SectionHeaderView .swift in Sources */,
 				9770C6732A71715900A9CA0B /* UIView+ext.swift in Sources */,
 				9770C6642A6BD69600A9CA0B /* TabBarController.swift in Sources */,
 				97BBFE0F2A9A1D780051A3A2 /* WABarView.swift in Sources */,

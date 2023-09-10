@@ -100,6 +100,13 @@ enum R {
             static let totalDistance = UIImage(named: "stats_totalDistance")
         }
         
+        enum Overview {
+            static let rightArrow = UIImage(named: "right_arrow")
+            static let checkmarkDone = UIImage(named: "checkmark_done")
+            static let checkmarkNotDone = UIImage(named: "checkmark_not_done")
+           
+        }
+        
         
         enum Common {
             static let downArrow = UIImage(named: "down_arrow")
